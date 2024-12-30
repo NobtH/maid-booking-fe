@@ -1,0 +1,88 @@
+.booking-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .booking-item {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-item h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .booking-item p {
+    margin: 4px 0;
+  }
+  
+  .no-bookings {
+    font-style: italic;
+    color: #888;
+  }
+
+  .booking-item button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Nút Hoàn thành */
+  .booking-item .complete-button {
+    background-color: #4caf50; /* Màu xanh lá */
+    color: white;
+  }
+  
+  .booking-item .complete-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Nút Hủy */
+  .booking-item .cancel-button {
+    background-color: #f44336; /* Màu đỏ */
+    color: white;
+    margin-left: 10px; /* Khoảng cách giữa hai nút */
+  }
+  
+  .booking-item .cancel-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Đặt hai nút cạnh nhau */
+  .booking-item .button-group {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  /* Nút Đánh giá */
+.booking-item .review-button {
+  background-color: #2196f3; /* Màu xanh dương */
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.booking-item .review-button:hover {
+  background-color: #1976d2;
+}
+
+  
+  

@@ -1,0 +1,74 @@
+/* BookingDetail.css */
+
+.booking-detail {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-detail__header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .booking-detail__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .booking-detail__body {
+    line-height: 1.6;
+  }
+  
+  .booking-detail__info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .booking-detail__description {
+    margin-top: 20px;
+  }
+  
+  .booking-detail__sub-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .booking-detail__footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .booking-detail__accept-button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .booking-detail__accept-button:hover {
+    background-color: #ff4d4d;
+  }
+  
+  .booking-detail__error {
+    color: red;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .booking-detail__loading {
+    color: #555;
+    text-align: center;
+    margin: 20px 0;
+  }
+  

@@ -1,0 +1,51 @@
+.worker-card {
+    border: 1px solid #ecedef;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+  
+  .worker-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .worker-info {
+    flex-grow: 1;
+  }
+  
+  .worker-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .worker-location,
+  .worker-rating,
+  .worker-price,
+  .worker-available,
+  .worker-description,
+  .worker-languages {
+    margin: 5px 0;
+  }
+  
+  .worker-actions button {
+    background-color: #00ffef;
+    color: #212325;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 140px;
+  }
+  
+  .worker-actions button:hover {
+    background-color: #ff5400;
+    color: #ffffff;
+  }
+  

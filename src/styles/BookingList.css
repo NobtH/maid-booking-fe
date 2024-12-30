@@ -1,0 +1,24 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .sort-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Khoảng cách giữa label và dropdown */
+  }
+  
+  .sort-select {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .bookinglist__header {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0; /* Đảm bảo tiêu đề không có margin */
+  }
+  

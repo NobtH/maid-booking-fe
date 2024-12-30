@@ -1,0 +1,93 @@
+/* Đặt phông chữ và màu sắc chung */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Card container */
+.booking-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.booking-card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+/* Description styling */
+.booking-card__description {
+  font-size: 1rem;
+  color: #4f4f4f;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Information styling */
+.booking-card__info {
+  font-size: 0.875rem;
+  color: #828282;
+  margin-bottom: 15px;
+}
+
+.booking-card__info span {
+  margin-right: 10px;
+}
+
+.booking-card__info .mx-2 {
+  margin: 0 8px;
+}
+
+/* Button styling */
+.booking-card__button {
+  display: inline-block;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.booking-card__button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .booking-card {
+    padding: 15px;
+  }
+
+  .booking-card__title {
+    font-size: 1.2rem;
+  }
+
+  .booking-card__description {
+    font-size: 0.95rem;
+  }
+
+  .booking-card__button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}

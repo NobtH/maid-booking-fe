@@ -1,0 +1,107 @@
+/* Hero Section */
+:root {
+  --main--color: #f6f2cb;
+  --text--color: #615f4e;
+  --button--color :#ff5400;
+  --main2--color: #aeac9a;
+}
+/* Banner chính */
+.home-page .hero {
+  background-color: var(--main--color); /* Màu nền chính */
+  color: var(--text--color); /* Màu chữ chính */
+  text-align: center; /* Canh giữa nội dung */
+  padding: 3rem 1rem; /* Khoảng cách trên dưới và hai bên */
+}
+
+.home-page .hero h1 {
+  font-size: 2.5rem; /* Kích thước chữ tiêu đề */
+  font-weight: bold; /* Chữ đậm */
+  margin-bottom: 0.5rem; /* Khoảng cách dưới tiêu đề */
+  color: var(--text--color); /* Màu chữ chính */
+}
+
+.home-page .hero p {
+  font-size: 1.125rem; /* Kích thước chữ nội dung */
+  color: var(--main2--color); /* Sử dụng màu phụ */
+}
+
+/* Danh sách người giúp việc */
+.home-page .card-list {
+  margin: 2rem 0; /* Khoảng cách trên dưới */
+}
+
+.home-page .card-list h2 {
+  font-size: 2rem; /* Kích thước chữ tiêu đề */
+  font-weight: 600; /* Chữ đậm vừa */
+  text-align: center; /* Canh giữa tiêu đề */
+  margin-bottom: 1.5rem; /* Khoảng cách dưới tiêu đề */
+  color: var(--text--color); /* Màu chữ chính */
+}
+
+.home-page .card-list .grid {
+  display: grid; /* Dùng grid layout */
+  gap: 1.5rem; /* Khoảng cách giữa các phần tử */
+  grid-template-columns: repeat(1, 1fr); /* Một cột mặc định */
+}
+
+@media (min-width: 768px) {
+  .home-page .card-list .grid {
+    grid-template-columns: repeat(3, 1fr); /* Ba cột cho màn hình lớn */
+  }
+}
+
+/* Phần giới thiệu */
+.home-page .about {
+  background-color: var(--main2--color); /* Màu nền phụ */
+  padding: 3rem 1rem; /* Khoảng cách trên dưới và hai bên */
+  text-align: center; /* Canh giữa nội dung */
+  color: var(--text--color); /* Màu chữ chính */
+}
+
+.home-page .about h2 {
+  font-size: 2rem; /* Kích thước chữ tiêu đề */
+  font-weight: 600; /* Chữ đậm vừa */
+  margin-bottom: 1rem; /* Khoảng cách dưới tiêu đề */
+  color: var(--text--color); /* Màu chữ chính */
+}
+
+.home-page .about p {
+  color: var(--text--color); /* Màu chữ chính */
+  max-width: 32rem; /* Độ rộng tối đa */
+  margin: 0 auto; /* Canh giữa */
+  font-size: 1rem; /* Kích thước chữ */
+  line-height: 1.6; /* Khoảng cách dòng */
+}
+
+/* Button */
+.btn-post button {
+  background-color: var(--buttom--color); /* Màu nền nút */
+  color: var(--text--color); /* Màu chữ nút */
+  border: none; /* Không viền */
+  padding: 12px 20px; /* Khoảng cách trong nút */
+  border-radius: 6px; /* Bo góc */
+  cursor: pointer; /* Thay đổi con trỏ */
+  font-size: 18px; /* Kích thước chữ nút */
+}
+
+.btn-post button:hover {
+  background-color: var(--main2--color); /* Đổi màu nền khi hover */
+  color: var(--main--color); /* Đổi màu chữ khi hover */
+}
+
+/* HomePage.css */
+.content-container {
+  display: flex; /* Sử dụng Flexbox để bố trí */
+  flex-direction: row; /* Bố trí theo hàng */
+  justify-content: space-between; /* Căn giữa các phần tử */
+}
+
+.worker-list-container {
+  flex: 1; /* Chiếm 1/3 chiều rộng */
+  padding: 20px; /* Thêm padding */
+}
+
+.post-card-container {
+  flex: 2; /* Chiếm 2/3 chiều rộng */
+  padding: 20px; /* Thêm padding */
+}

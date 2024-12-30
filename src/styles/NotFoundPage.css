@@ -1,0 +1,32 @@
+.not-found-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    text-align: center;
+  }
+  
+  .not-found-page h1 {
+    font-size: 6rem;
+    color: #3b82f6;
+    margin: 0;
+  }
+  
+  .not-found-page p {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 16px;
+  }
+  
+  .not-found-page a {
+    color: #3b82f6;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .not-found-page a:hover {
+    text-decoration: underline;
+  }
+  
