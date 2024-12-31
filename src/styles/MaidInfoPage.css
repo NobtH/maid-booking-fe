@@ -1,0 +1,50 @@
+.maid-info-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  min-height: 60vh; 
+  background-color: #f8f9fa;
+}
+  
+  .maid-info-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .maid-info-header {
+    margin-bottom: 20px;
+  }
+  
+  .maid-info-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .maid-info-rating {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #f39c12;
+  }
+  
+  .maid-info-details {
+    text-align: left;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  
+  .maid-info-details p {
+    margin: 10px 0;
+  }
+  
+  .maid-info-details strong {
+    color: #555555;
+  }
+  

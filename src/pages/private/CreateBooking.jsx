@@ -160,7 +160,7 @@ const CreateBooking = () => {
             >
               <option value="">Chọn tỉnh/thành</option>
               {province.map((province) => (
-                <option key={province.code} value={province.name}>
+                <option key={province.code} value={province.code}>
                   {province.name}
                 </option>
               ))}
@@ -179,7 +179,7 @@ const CreateBooking = () => {
                 >
                   <option value="">Chọn quận/huyện</option>
                   {district.map((district) => (
-                    <option key={district.code} value={district.name}>
+                    <option key={district.code} value={district.code}>
                       {district.name}
                     </option>
                   ))}

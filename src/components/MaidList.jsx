@@ -7,16 +7,16 @@ const MaidList = () => {
   const [maids, setMaids] = useState([]);
 
   useEffect(() => {
-    const fetchMaids = async () => {
+    const fetchTopMaids = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/api/maids'); // API maids
+        const response = await axios.get('http://localhost:4000/api/maids/top'); // Gọi API mới
         setMaids(response.data);
       } catch (error) {
         console.error('Lỗi khi lấy danh sách người giúp việc:', error.message);
       }
     };
 
-    fetchMaids();
+    fetchTopMaids();
   }, []);
 
   return (

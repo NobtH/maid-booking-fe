@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/Navbar.css"; // Đảm bảo file CSS được cập nhật phù hợp
+import "../styles/Navbar.css";
+import axios from "axios";
 
 const Header = ({ onSearch }) => {
   const navigate = useNavigate();
@@ -26,10 +27,20 @@ const Header = ({ onSearch }) => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (onSearch) {
-      onSearch(query);
+    try {
+      const response = await axios.get(`http://localhost:4000/api/maids/search?name=${query}`);
+      const maids = response.data;
+  
+      if (maids.length === 1) {
+        navigate(`/maids/${maids[0]._id}`);
+      } else {
+        navigate('/maids', { state: { maids } });
+      }
+      setQuery('');
+    } catch (err) {
+      alert(err.response?.data?.message || 'Không tìm thấy người giúp việc.');
     }
   };
 
@@ -56,7 +67,7 @@ const Header = ({ onSearch }) => {
             className="search-input"
             aria-label="Tìm kiếm người giúp việc" // Thêm mô tả cho input
           />
-          <span className="search-icon">
+          <span className="search-icon" onClick={handleSubmit}>
             <i className="fa-solid fa-search"></i>
           </span>
         </form>

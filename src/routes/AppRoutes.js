@@ -16,6 +16,7 @@ const ReviewPage = lazy(() => import('../pages/public/ReviewPage'));
 const EditReviewPage = lazy(() => import('../pages/public/EditReviewPage'));
 const WorkerCard = lazy(() => import("../pages/public/MaidCard"));
 const PostCard = lazy(() => import("../pages/private/BookingCard"));
+const MaidInfoPage = lazy(() => import("../pages/public/MaidInfoPage"));
 
 const AppRoutes = () => {
   return (
@@ -35,6 +36,9 @@ const AppRoutes = () => {
         element={<CreateBooking />}/>
         <Route path="/bookings/:id" 
         element={<PostCard />} />
+
+        <Route path="/maids/:id"
+        element={<MaidInfoPage />} />
         
         <Route path="/profile" 
         element={<ProfilePage />} />

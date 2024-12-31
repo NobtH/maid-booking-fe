@@ -23,7 +23,7 @@ const Card = ({ maid, userId }) => {
   }, [userId]);
 
   const handleViewMore = () => {
-    navigate(`/maids/${_id}`);
+    navigate(`/maids/${userId}`);
   };
 
   return (
