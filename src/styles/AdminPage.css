@@ -1,0 +1,135 @@
+/* Admin Page Styles */
+
+/* Root Variables */
+:root {
+    --main--color: #f6f2cb;
+    --text--color: #615f4e;
+    --button--color: #ff5400;
+    --main2--color: #aeac9a;
+  }
+  
+  /* Hero Section */
+  .admin-page .admin-header {
+    background-color: var(--main--color); /* Màu nền chính */
+    color: var(--text--color); /* Màu chữ chính */
+    text-align: center; /* Canh giữa nội dung */
+    padding: 3rem 1rem; /* Khoảng cách trên dưới và hai bên */
+  }
+  
+  .admin-page .admin-header h1 {
+    font-size: 2.5rem; /* Kích thước chữ tiêu đề */
+    font-weight: bold; /* Chữ đậm */
+    margin-bottom: 0.5rem; /* Khoảng cách dưới tiêu đề */
+    color: var(--text--color); /* Màu chữ chính */
+  }
+  
+  .admin-page .admin-header p {
+    font-size: 1.125rem; /* Kích thước chữ nội dung */
+    color: var(--main2--color); /* Màu phụ */
+  }
+  
+  /* Content Section */
+  .content-container {
+    display: flex; /* Flexbox để bố trí */
+    flex-direction: row; /* Bố trí theo hàng */
+    justify-content: space-between; /* Căn đều không gian */
+    gap: 1.5rem; /* Khoảng cách giữa các container */
+    padding: 2rem; /* Padding cho toàn bộ container */
+  }
+  
+  /* User Profile Table */
+  .user-profile-container {
+    flex: 1; /* Chiếm 1/2 chiều rộng */
+    background-color: var(--main--color); /* Màu nền phụ */
+    padding: 1.5rem; /* Padding bên trong */
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  }
+  
+  .user-profile-container h2 {
+    font-size: 2rem; /* Kích thước chữ tiêu đề */
+    font-weight: bold; /* Chữ đậm */
+    color: var(--text--color); /* Màu chữ chính */
+    margin-bottom: 1rem; /* Khoảng cách dưới tiêu đề */
+    text-align: center; /* Canh giữa */
+  }
+  
+  /* Post Table */
+  .post-container {
+    flex: 1; /* Chiếm 1/2 chiều rộng */
+    background-color: var(--main--color); /* Màu nền phụ */
+    padding: 1.5rem; /* Padding bên trong */
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  }
+  
+  .post-container h2 {
+    font-size: 2rem; /* Kích thước chữ tiêu đề */
+    font-weight: bold; /* Chữ đậm */
+    color: var(--text--color); /* Màu chữ chính */
+    margin-bottom: 1rem; /* Khoảng cách dưới tiêu đề */
+    text-align: center; /* Canh giữa */
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    border-collapse: collapse; /* Gộp các đường viền */
+    margin-bottom: 1rem; /* Khoảng cách dưới bảng */
+  }
+  
+  table th, table td {
+    border: 1px solid var(--main2--color); /* Viền bảng */
+    padding: 0.75rem; /* Padding bên trong */
+    text-align: left; /* Canh trái */
+  }
+  
+  table th {
+    background-color: var(--main2--color); /* Nền header bảng */
+    color: var(--text--color); /* Màu chữ header */
+    font-weight: bold; /* Chữ đậm */
+  }
+  
+  table td {
+    color: var(--text--color); /* Màu chữ nội dung */
+  }
+  
+  /* Buttons */
+  button {
+    background-color: var(--button--color); /* Nền nút */
+    color: var(--text--color); /* Màu chữ nút */
+    border: none; /* Xóa viền */
+    padding: 10px 15px; /* Padding */
+    border-radius: 6px; /* Bo góc nút */
+    cursor: pointer; /* Thay đổi con trỏ */
+    font-size: 16px; /* Kích thước chữ */
+  }
+  
+  button:hover {
+    background-color: var(--main2--color); /* Đổi nền khi hover */
+    color: var(--main--color); /* Đổi màu chữ khi hover */
+  }
+  
+  /* Form Input */
+  input {
+    border: 1px solid var(--main2--color); /* Viền input */
+    padding: 8px 12px; /* Padding */
+    border-radius: 6px; /* Bo góc */
+    margin-right: 0.5rem; /* Khoảng cách giữa các input */
+    font-size: 16px; /* Kích thước chữ */
+    color: var(--text--color); /* Màu chữ */
+  }
+  
+  input:focus {
+    outline: none; /* Xóa outline mặc định */
+    border-color: var(--button--color); /* Đổi màu viền khi focus */
+    box-shadow: 0 0 4px var(--button--color); /* Hiệu ứng đổ bóng khi focus */
+  }
+
+  .statistics-container {
+    margin-right: auto; /* Đẩy nội dung sang phải */
+    margin-left: 20px; /* Tạo khoảng cách bên phải */
+    text-align: left; /* Canh trái nội dung */
+    width: fit-content; /* Đảm bảo nội dung không chiếm toàn bộ chiều rộng */
+  }
+  

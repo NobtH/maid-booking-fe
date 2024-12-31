@@ -18,7 +18,12 @@ const LoginPage = () => {
       localStorage.setItem("token", response.token);
       localStorage.setItem("userId", response.user.id);
       localStorage.setItem("role", response.user.role);
-      navigate('/');
+      if (response.user.role === 'admin') {
+        navigate('/admin');
+      }
+      else {
+        navigate('/');
+      }
     } catch (err) {
       setError(err.response?.data?.message || 'Đăng nhập thất bại');
     }

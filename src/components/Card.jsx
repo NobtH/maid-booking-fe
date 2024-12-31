@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const Card = ({ maid, userId }) => {
-  const { _id, age, location, description, totalScore } = maid;
+  const { _id, age, location, description, ratings } = maid;
   const navigate = useNavigate();
   const [name, setName] = useState('Không rõ tên');
 
@@ -37,7 +37,7 @@ const Card = ({ maid, userId }) => {
       </div>
       <h2 className="card__name">{name}</h2>
       <p className="card__rating">
-        ⭐ {totalScore ? totalScore.toFixed(1) : 'Chưa có đánh giá'}
+        ⭐ {ratings ? ratings.toFixed(1) : 'Chưa có đánh giá'}
       </p>
       <p className="card__location">Tuổi: {age} | {location}</p>
       {description && (

@@ -36,7 +36,7 @@ const ReviewPage = () => {
       );
 
       alert('Đánh giá thành công!');
-      navigate('/manage-bookings');
+      navigate('/');
     } catch (err) {
       console.error('Error submitting review:', err.message);
       setError(err.response?.data?.message || 'Có lỗi xảy ra khi gửi đánh giá.');

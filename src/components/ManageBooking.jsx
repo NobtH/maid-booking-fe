@@ -126,51 +126,53 @@ const ManageBooking = () => {
             <p>
               <strong>Trạng thái:</strong> {booking.status}
             </p>
+  
             {/* Nút Hoàn Thành và Hủy */}
             <div className="flex gap-4 mt-4">
               {booking.status === 'confirmed' && (
-                <>
-                  <div className="button-group">
-                    <button
-                      className="complete-button"
-                      onClick={() =>
-                        window.confirm('Bạn có chắc chắn muốn hoàn thành booking này?') &&
-                        handleCompleteBooking(booking._id)
-                      }
-                    >
-                      Hoàn thành
-                    </button>
-                    <button
-                      className="cancel-button"
-                      onClick={() =>
-                        window.confirm('Bạn có chắc chắn muốn hủy booking này?') &&
-                        handleCancelBooking(booking._id)
-                      }
-                    >
-                      Hủy
-                    </button>
-                  </div>
-                </>
-              )}
-              {booking.status === 'completed' && (
                 <div className="button-group">
-                  {booking.isReviewed ? (
-                    <button
-                      className="review-button"
-                      onClick={() => handleNavigateToEditReview(booking)}
-                    >
-                      Sửa đánh giá
-                    </button>
-                  ) : (
-                    <button
-                      className="review-button"
-                      onClick={() => handleNavigateToReview(booking)}
-                    >
-                      Đánh giá
-                    </button>
-                  )}
+                  <button
+                    className="complete-button"
+                    onClick={() =>
+                      window.confirm('Bạn có chắc chắn muốn hoàn thành booking này?') &&
+                      handleCompleteBooking(booking._id)
+                    }
+                  >
+                    Hoàn thành
+                  </button>
+                  <button
+                    className="cancel-button"
+                    onClick={() =>
+                      window.confirm('Bạn có chắc chắn muốn hủy booking này?') &&
+                      handleCancelBooking(booking._id)
+                    }
+                  >
+                    Hủy
+                  </button>
                 </div>
-)}
+              )}
+  
+              {/* Nút Đánh giá chỉ hiển thị nếu người dùng không phải là người giúp việc tham gia booking */}
+              {booking.status === 'completed' &&
+                booking.maidId?._id !== localStorage.getItem('userId') && (
+                  <div className="button-group">
+                    {booking.isReviewed ? (
+                      <button
+                        className="review-button"
+                        onClick={() => handleNavigateToEditReview(booking)}
+                      >
+                        Sửa đánh giá
+                      </button>
+                    ) : (
+                      <button
+                        className="review-button"
+                        onClick={() => handleNavigateToReview(booking)}
+                      >
+                        Đánh giá
+                      </button>
+                    )}
+                  </div>
+                )}
             </div>
           </div>
         ))
